@@ -26,7 +26,5 @@ app.get('*', (req, res) => {
 });
 
 
-// const server = http.createServer(app);
-// server.listen(port);
-
-app.listen(port, "0.0.0.0", function(){console.log("Listening on port: " + port)});
+const server = http.createServer(app);
+server.listen(process.env.PORT || 8000);
