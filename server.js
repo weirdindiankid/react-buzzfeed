@@ -14,10 +14,10 @@ app.use(bodyParser.json());
 
 app.use('./node_modules', express.static(path.join(__dirname, './node_modules')))
 
-// const webpack = require('webpack');
-//
-// const config = require('./webpack.config');
-// const compiler = webpack(config);
+const webpack = require('webpack');
+
+const config = require('./webpack.config');
+const compiler = webpack(config);
 
 
 // All requests
